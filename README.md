@@ -3,7 +3,6 @@
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 **Camera-only hand interaction for zoom control and gesture-driven scrolling — no GPU, no special hardware, no gloves.**
 
@@ -74,7 +73,7 @@ git clone https://github.com/BenniKensei/Vocus.git
 cd Vocus
 
 python -m venv .venv
-.venv\Scripts\activate          # Windows
+.venv\Scripts\activate          # Windows PowerShell (run Set-ExecutionPolicy RemoteSigned -Scope CurrentUser if blocked)
 # source .venv/bin/activate     # macOS / Linux
 
 pip install -r requirements.txt
@@ -214,6 +213,7 @@ The project does not yet include a held-out validation split, cross-validation s
 
 ## IX. Known Limitations & Trade-offs
 
+- On startup, mediapipe emits a `UserWarning: SymbolDatabase.GetPrototype() is deprecated` from its protobuf dependency. This is a known upstream issue and does not affect functionality.
 - Model generalization depends on the operator's lighting, camera angle, and hand shape — the SVM is fit on locally captured data only.
 - Training accuracy on the local capture set is the only built-in metric; no held-out benchmark exists.
 - Model serialization uses `pickle`, which is not safe for untrusted artifacts.
