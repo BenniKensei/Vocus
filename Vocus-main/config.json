@@ -1,0 +1,34 @@
+{
+  "zoom": {
+    "smooth_alpha": 0.42,
+    "fist_threshold": 0.56,
+    "neutral_threshold": 1.02,
+    "over_open_threshold": 1.55,
+    "deadzone_in": 0.18,
+    "deadzone_out": 0.24,
+    "strength_curve_in": 2.2,
+    "strength_curve_out": 2.4,
+    "out_gain": 0.6,
+    "min_magnitude": 1,
+    "max_magnitude": 3,
+    "hold_last_motion_sec": 0.26,
+    "reset_cooldown_sec": 1.0
+  },
+  "gesture": {
+    "history_len": 5,
+    "toggle_delta_threshold": 0.1
+  },
+  "controller": {
+    "scroll_cooldown_sec": 0.12,
+    "gaze_scroll_cooldown_sec": 0.025,
+    "zoom_cooldown_sec": 0.08,
+    "zoom_edge_cooldown_sec": 0.12,
+    "edge_trigger_cooldown_sec": 0.18,
+    "gesture_repeat_delay_sec": 3.0,
+    "magnitude": 4
+  },
+  "app": {
+    "default_mode": "ZOOM",
+    "preview": true
+  }
+}
