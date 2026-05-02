@@ -2,7 +2,6 @@
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
 
 **Camera-only hand interaction for zoom control and gesture-driven scrolling — no GPU, no special hardware, no gloves.**
 
